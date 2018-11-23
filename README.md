@@ -4,6 +4,8 @@ This is a React project that I am working on. It is my first React app.
 
 This app allows you to enter a band or artist, then search for when and where they are on tour.
 
+This was created using the bandsintown API.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import DisplayBand from "./DisplayBand";
 
 class BandSearch extends Component {
@@ -38,9 +39,6 @@ class BandSearch extends Component {
     this.setState({
       events: events
     });
-    console.log(res);
-    console.log(events);
-    console.log(artist);
   }
 
   handleChange = () => {
@@ -54,16 +52,13 @@ class BandSearch extends Component {
       <div>
         <h3>Enter Band to check on tour dates</h3>
         <form>
-          <input
-            className="search-field"
+          <SearchField
             type="text"
             placeholder="Enter band name"
             ref={input => (this.result = input)}
             onChange={this.handleChange}
           />
-          <button className="btn-search" onClick={this.getBand}>
-            Search
-          </button>
+          <SearchButton onClick={this.getBand}>Search</SearchButton>
         </form>
         {this.state.band && this.state.events && (
           <DisplayBand
@@ -78,3 +73,19 @@ class BandSearch extends Component {
 }
 
 export default BandSearch;
+
+const SearchField = styled.input`
+  margin: 16px 0;
+  height: 25px;
+  width: 200px;
+`;
+
+const SearchButton = styled.button`
+  height: 32px;
+  width: 100px;
+  background-color: cadetblue;
+  cursor: pointer;
+  &:hover {
+    background-color: lightseagreen;
+  }
+`;
