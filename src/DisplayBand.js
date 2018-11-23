@@ -24,7 +24,7 @@ export default DisplayBand;
 
 const ArtistImage = styled.img`
   border: 1px solid black;
-  box-shadow: 0 3px 8px black;
+  box-shadow: 0 0 15px black;
   margin: 10px 0;
   margin-bottom: 20px;
 `;
@@ -33,7 +33,8 @@ const EventInfo = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
   margin: 5px 0;
   padding: 12px;
   width: 500px;

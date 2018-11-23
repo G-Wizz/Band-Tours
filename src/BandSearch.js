@@ -50,7 +50,7 @@ class BandSearch extends Component {
   render() {
     return (
       <div>
-        <h3>Enter Band to check on tour dates</h3>
+        <h3>Enter Band to check on tour dates...</h3>
         <form>
           <SearchField
             type="text"
@@ -81,6 +81,7 @@ const SearchField = styled.input`
 `;
 
 const SearchButton = styled.button`
+  font-family: "Quicksand", sans-serif;
   height: 32px;
   width: 100px;
   background-color: cadetblue;

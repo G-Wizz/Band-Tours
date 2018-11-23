@@ -18,7 +18,9 @@
 } */
 
 #title {
-  background-color: #282c34;
+  background-color: #2e2e2e;
+  font-family: "Freckle Face", cursive;
+  text-shadow: 4px 0 15px black;
   min-height: 100px;
   width: 100%;
   margin: 0;
@@ -28,4 +30,8 @@
   justify-content: center;
   color: white;
   box-shadow: 0 3px 5px black;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
 }
